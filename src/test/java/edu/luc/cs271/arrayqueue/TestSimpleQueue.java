@@ -2,6 +2,7 @@ package edu.luc.cs271.arrayqueue;
 
 import static org.junit.Assert.*;
 
+
 import java.util.Arrays;
 import java.util.List;
 import org.junit.After;
@@ -114,6 +115,7 @@ public class TestSimpleQueue {
     fixture.offer(value1);
     fixture.offer(value2);
     final List<String> list = fixture.asList();
+//    System.out.println(list.toString());
     assertEquals(2, list.size());
     assertEquals(Arrays.asList(value1, value2), list);
   }
